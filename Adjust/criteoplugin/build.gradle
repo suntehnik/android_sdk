@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 23
+        versionCode 1
+        versionName "4.7.0"
+    }
+}
+
+task jar(type: Jar) {
+    from 'src/main/java'
+}
+
+dependencies {
+    compile project(':adjust')
+}
