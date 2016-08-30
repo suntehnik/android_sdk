@@ -19,3 +19,5 @@ dependencies {
 task jar(type: Jar) {
     from 'src/main/java'
 }
+
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
